@@ -1,4 +1,5 @@
 var Connection = new function(){
+	//internal method for turning json objects to query string
 	var serializeObject = function(obj, parentString){
 		var count = obj.length,serialized = "";
 		for (var i in obj) {
