@@ -575,11 +575,4 @@ var GrabController = function(clickAction) {
 	document.body.onmouseover = new ActionWrapper(function(el){el.boxElement();});
 	document.body.onmouseout = function(e){box.setVisible(false);}
 };
-			var xpathView = new $B('div',{ 'innerHTML':'', 'className':styles.interface } );
-			var display = new GrabWindow([xpathView],'display',function(){console.log('close')}, { 'top':5,'right':5 } );
-			var controller = new GrabController(
-					function(xpath) {
-						xpathView.innerHTML = xpath;
-					}
-				);
 

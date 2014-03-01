@@ -31,22 +31,22 @@ var listCompare = {
 var Features = {
 	tagName: {
 		extract: function(element) {return element.tagName.toLowerCase();},
-		compare: null,
+		compare: null
 	},
 	index:{
 		extract: function(element) {return element.getIndex();},
 		compare: new StrictScorer(1,0,null),
-		selector: function(val){return val;},
+		selector: function(val){return val;}
 	},
 	abs: {
 		extract: function(element) {return element.getAbsolute();},
-		compare: new StrictScorer(1,0,null),
+		compare: new StrictScorer(1,0,null)
 	},
 	id:{
 		extract: function(element) {return element.id;},
 		compare: new StrictScorer(1,0,null),
 		selector: function(val){return "@id='"+val+"'";},
-		unique: true,
+		unique: true
 	},	
 	last: {
 		extract: function(element) {return element.isLast();},
@@ -60,8 +60,8 @@ var Features = {
 			var p=["contains(concat(' ',@class,' '),' "," ')","]["],sel = p[0] + val[0] + p[1];
 			for(var i=1;i<val.length;i++) sel += p[2] + p[0] + val[i] + p[1];
 			return sel;
-		},
-	},
+		}
+	}
 };
 Features_max_score = (function(){
 	var score = 0;

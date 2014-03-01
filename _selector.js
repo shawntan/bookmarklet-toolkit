@@ -100,7 +100,7 @@ var GrabSelector = function(resObj) {
 	var res = this.result = {
 		tag: null,
 		obj: null,
-		xpath: "",
+		xpath: ""
 	};
 	if(resObj){
 		res.obj = resObj;
