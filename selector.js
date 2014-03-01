@@ -110,7 +110,7 @@ window.queryDocument = function() {
     };
   }
 }();
-var styles = {"interface":"parcels_interface", selected:"parcels_selected", rejected:"parcels_rejected", highlighted:"parcels_highlight"}, GrabWindow = function(a, b, c, d) {
+var styles = {"interface":"parcels_interface", selected:"parcels_selected", rejected:"parcels_rejected", highlighted:"parcels_highlight"}, classignorelist = Object.keys(styles), GrabWindow = function(a, b, c, d) {
   console.log(d);
   b = b ? " " + b : "";
   c = $B("div", {children:[$B("div", {className:styles["interface"], innerHTML:"X", style:{"float":"right", display:"block", clear:"left"}, onclick:c})]});

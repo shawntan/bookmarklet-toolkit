@@ -1,9 +1,10 @@
 var styles = {
-	'interface':	"parcels_interface",
+	'interface':"parcels_interface",
 	'selected':	"parcels_selected",
 	'rejected':	"parcels_rejected",
 	'highlighted':"parcels_highlight"
 }
+var classignorelist = Object.keys(styles);
 var GrabWindow = function(children,className,closeAction,coordinates) {
 	console.log(coordinates);
 	className = className?" "+className:""
