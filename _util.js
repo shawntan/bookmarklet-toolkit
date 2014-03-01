@@ -109,7 +109,7 @@ window.queryDocument = (function(){
 			res = new Array();
 			for(var i=res_length-1;i>=0;i--){
 				var v = result_holder.snapshotItem(i);
-				if (v.className.indexOf(styles.interface) == -1 ) {
+				if (v.className.indexOf(styles['interface']) == -1 ) {
 					res.push(v);
 				}
 			}

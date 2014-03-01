@@ -1,7 +1,7 @@
 var border_width = 5;
 var makeBoxBorders = function(border_width, fix_side){
 	var self = this;
-	var d = $B('div', {className: styles.interface + " " + "box_border"});
+	var d = $B('div', {className: styles['interface'] + " " + "box_border"});
 	d.style[fix_side] = border_width + "px";
 	return d;
 };

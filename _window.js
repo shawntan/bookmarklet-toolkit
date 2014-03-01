@@ -1,8 +1,8 @@
 var styles = {
-	interface:	"parcels_interface",
-	selected:	"parcels_selected",
-	rejected:	"parcels_rejected",
-	highlighted:"parcels_highlight"
+	'interface':	"parcels_interface",
+	'selected':	"parcels_selected",
+	'rejected':	"parcels_rejected",
+	'highlighted':"parcels_highlight"
 }
 var GrabWindow = function(children,className,closeAction,coordinates) {
 	console.log(coordinates);

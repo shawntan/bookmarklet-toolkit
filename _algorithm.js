@@ -34,7 +34,7 @@ var Align = function(matcher,scorer,match,mismatch,init){
 				break;
 			}
 		}
-		delete c,p,t;
+//		delete c,p,t;
 		return result;
 	};
 };
