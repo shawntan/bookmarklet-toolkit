@@ -29,14 +29,5 @@
 		</div>
 	</body>
 		<script src="selector.js"> </script>
-		<script>
-			var xpathView = new $B('div',{ 'innerHTML':'', 'className':styles['interface'] } );
-			var display = new GrabWindow([xpathView],'display',function(){console.log('close')}, { 'top':5,'right':5 } );
-			var controller = new GrabController(
-					function(xpath) {
-						xpathView.innerHTML = xpath;
-					}
-				);
-		</script>
 </html>
 

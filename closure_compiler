@@ -1,0 +1,18 @@
+// ==ClosureCompiler==
+// @compilation_level SIMPLE_OPTIMIZATIONS
+// @output_file_name selector.js
+// @code_url https://raw.github.com/shawntan/bookmarklet-toolkit/selector/_util.js
+// @code_url https://raw.github.com/shawntan/bookmarklet-toolkit/selector/_window.js
+// @code_url https://raw.github.com/shawntan/bookmarklet-toolkit/selector/_algorithm.js
+// @code_url https://raw.github.com/shawntan/bookmarklet-toolkit/selector/_attribute_actions.js
+// @code_url https://raw.github.com/shawntan/bookmarklet-toolkit/selector/_selector.js
+// @code_url https://raw.github.com/shawntan/bookmarklet-toolkit/selector/_controller.js
+// @formatting pretty_print
+// ==/ClosureCompiler==
+var xpathView = new $B('div',{ 'innerHTML':'', 'className':styles['interface'] } );
+var display = new GrabWindow([xpathView],'display',$B.destroyAll, { 'top':5,'right':5 } );
+var controller = new GrabController(
+function(xpath) {
+xpathView.innerHTML = xpath;
+}
+);
